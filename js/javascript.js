@@ -922,29 +922,40 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
 // 21.2
 function findLongestWord(string) {
-  // Change code below this line
+//   // Change code below this line
 
-  // for (let i = 0; i < string.length; i += 1) {
-  //   console.log(string[i]);
-  //   // const longestWord = string[i] > string.length - 1;
-  //   const splitString = string.split(" ")
-  //   console.log(splitString)
+//   // for (let i = 0; i < string.length; i += 1) {
+//   //   console.log(string[i]);
+//   //   // const longestWord = string[i] > string.length - 1;
+//   //   const splitString = string.split(" ")
+//   //   console.log(splitString)
   // }
-  
+  // const longStr = string.split(" ");
+  // console.log(longStr);
+  // const viewWords = longStr.length;
+  // console.log(viewWords);
+  const stringSplit = string.split(' ');
+  console.log(stringSplit);
+  let longestWord = 0;
+  // console.log(longestWord);
+
+  for (let i = 0; i < stringSplit; i += 1) {
+    console.log([i])
+    if (stringSplit[i].length > longestWord.length) {
+      console.log(stringSplit[i].length)
+      longestWord = stringSplit[i].length;
+      console.log(longestWord);
+    }
+    
+}
+ 
 
 
-  // Change code above this line
+//   // Change code above this line
 }
 
-findLongestWord("The quick brown fox jumped over the lazy dog");
+findLongestWord("T qck broootytyown fox jumped over the lazy dog");
+findLongestWord("Gole dooremar a roll");
+findLongestWord("M e for be witytha you");
+findLongestWord("Mayor the forceshing be with you")
 
-const clients = ["Mango", "Ajax", "Poly"];
-
-for (const client of clients) {
-  console.log(client);
-}
-const strings = ["The quick brown fox jumped over the lazy dog"]
-for (const string of strings); {
-      console.log(string);
-}
-  
