@@ -834,15 +834,15 @@ console.log(slugify("Ten secrets of JavaScript"));
 console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
 
 // 14.2
-const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
 
-// Change code below this line
-const firstTwoEls = fruits.slice(0, 2);
-console.log(firstTwoEls);
-const nonExtremeEls = fruits.slice(1, fruits.length -1);
-console.log(nonExtremeEls);
-const lastThreeEls = fruits.slice(-3);
-console.log(lastThreeEls);
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// console.log(firstTwoEls);
+// const nonExtremeEls = fruits.slice(1, fruits.length -1);
+// console.log(nonExtremeEls);
+// const lastThreeEls = fruits.slice(-3);
+// console.log(lastThreeEls);
 
 // 15.2
 const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
@@ -866,3 +866,57 @@ console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3));
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2));
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4));
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+
+// 17.2
+const start = 3;
+const end = 7;
+
+for (let i = start; i <= end; i += 1) { // Change this line
+  console.log(i);
+}
+
+
+// 18.2
+function calculateTotal(number) {
+ // Change code below this line
+  let total = 0;
+  for (let i = 1; i <= number; i += 1) {
+     total += i;
+    }
+  return total;
+
+  // Change code above this line
+}
+console.log(calculateTotal(1));
+console.log(calculateTotal(3));
+console.log(calculateTotal(7));
+console.log(calculateTotal(18));
+console.log(calculateTotal(24));
+
+
+// 19.2
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+for (let i = 0; i < fruits.length; i += 1) { // Change this line
+  const fruit = fruits[i]; // Change this line
+  console.log(fruit);
+}
+
+
+// 20.2
+function calculateTotalPrice(order) {
+  let total = 0;
+  // Change code below this line
+  for (let i = 0; i <= order.length; i += 1) {
+    // console.log(order[i]);
+    total += order[i];
+    console.log(total)
+  }
+  // Change code above this line
+    return total;
+  
+}
+console.log(calculateTotalPrice([12, 85, 37, 4]));
+console.log();
+console.log();
