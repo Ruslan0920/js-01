@@ -921,22 +921,22 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
 
 // 21.2
-function findLongestWord(string) {
-  const splitString = string.split(" ");
-  // console.log(splitString);
-  let wordsLength = 0;
-  let longestWord;
+// function findLongestWord(string) {
+//   const splitString = string.split(" ");
+//   console.log(splitString);
+//   let wordsLength = 0;
+  // let longestWord;
 
-  for (let i = 0; i < splitString.length; i = + 1) {
-    wordsLength = splitString[i].length;
+  // for (let i = 0; i < splitString.length; i = + 1) {
+  //   wordsLength = splitString[i].length;
 
-    if (splitString[i].length > wordsLength) {
+    // if (splitString[i].length > wordsLength) {
 //       longestWord = splitString[i];
 // console.log(longestWord)
       
-    }
+    // }
     
-  }
+  // }
 
 //   // Change code below this line
   //   const splitString = string.split(" ")
@@ -975,10 +975,67 @@ function findLongestWord(string) {
 
 
 //   // Change code above this line
-}
-console.log(findLongestWord("T qck broootytyown fox jumped over the lazy dog"));
-findLongestWord("T qck broootytyown fox jumped over the lazy dog");
-findLongestWord("Gole dooremar a roll");
-findLongestWord("M e for be witytha you");
-findLongestWord("Mayor the forceshing be with you")
+// }
+// console.log(findLongestWord("T qck broootytyown fox jumped over the lazy dog"));
+// findLongestWord("T qck broootytyown fox jumped over the lazy dog");
+// findLongestWord("Gole dooremar a roll");
+// findLongestWord("M e for be witytha you");
+// findLongestWord("Mayor the forceshing be with you")
 
+// function findLongestWord(string) {
+//     const splitString = string.split(" ");
+//   console.log(splitString);
+//   let wordsLength = 0;
+
+//   for (let i = 0; i < splitString.length; i += 1) {
+//     console.log(splitString[i].length);
+//     wordsLength = splitString[i].length;
+  
+//     let longestWord = splitString[i].length > wordsLength;
+//     return longestWord
+//   }
+// }
+
+// console.log(findLongestWord("T qck broootytyown fox jumped overs then lazy dog"));
+
+function findLongestWord(str) {
+  var strSplit = str.split(' ');
+  var longestWord = 0;
+  for(var i = 0; i < strSplit.length; i++){
+    if(strSplit[i].length > longestWord){
+	longestWord = strSplit[i];
+     }
+  }
+  return longestWord;
+}
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+
+// const findLongestWord = function(str) {
+//   let arrStr = str.split(' ');
+//   let wordLength = 0;
+//   let longestWord;
+
+//   for (let i = 0; i < arrStr.length; i += 1) {
+//     wordLength = arrStr[1].length;
+
+//     if (arrStr[i].length > wordLength) {
+//       longestWord = arrStr[i];
+
+//       return longestWord;
+//     }
+
+//   }
+// };
+
+// // Вызовы функции для проверки
+// console.log(
+//   findLongestWord("The quick brown fox jumped overflowersing the lazy dog")
+// ); // вернет 'jumped'
+
+// console.log(
+//   findLongestWord("Google do a roll")
+// ); // вернет 'Google'
+
+// console.log(
+//   findLongestWord("May the force be with you")
+// ); // вернет 'force'
