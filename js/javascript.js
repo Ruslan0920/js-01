@@ -55,17 +55,17 @@
 // const accessPermited = age >= 12 || accompanied;
 // console.log(accessPermited);
 
-const numbers = [1, 3, 14, 18, 5, 28, 37, 46, 54, 8];
-const threshold = 15;
+// const numbers = [1, 3, 14, 18, 5, 28, 37, 46, 54, 8];
+// const threshold = 15;
 
-console.table(numbers);
+// console.table(numbers);
 
-for (let i = 0; i < numbers.length; i += 1) {
-  if (numbers[i] > threshold) {
-    continue;
-  }
-  console.log(`Число менше за ${threshold}: ${numbers[i]}`);
-}
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] > threshold) {
+//     continue;
+//   }
+//   console.log(`Число менше за ${threshold}: ${numbers[i]}`);
+// }
 
 const languages = ["C", "C++", "Java", "JavaScript"];
 languages.splice(1, 2, "Python", "Swift", "Go");
@@ -947,7 +947,7 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 //       longestWord = splitString[i];
 // // console.log(longestWord)
       
-// 
+//
     
   // }
 
@@ -1018,17 +1018,17 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
 // console.log(findLongestWord("T qck broootytyown fox jumped overs then lazy dog"));
 
-function findLongestWord(str) {
-  var strSplit = str.split(' ');
-  var longestWord = 0;
-  for(var i = 0; i < strSplit.length; i++){
-    if(strSplit[i].length > longestWord){
-	longestWord = strSplit[i];
-     }
-  }
-  return longestWord;
-}
-console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// function findLongestWord(str) {
+//   var strSplit = str.split(' ');
+//   var longestWord = 0;
+//   for(var i = 0; i < strSplit.length; i++){
+//     if(strSplit[i].length > longestWord){
+// 	longestWord = strSplit[i];
+//      }
+//   }
+//   return longestWord;
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 
 // const findLongestWord = function(str) {
 //   let arrStr = str.split(' ');
@@ -1059,3 +1059,125 @@ console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 // console.log(
 //   findLongestWord("May the force be with you")
 // ); // вернет 'force'
+
+// function findLongestWord(string) {
+//   var stringSplit = string.split(' ');
+//   console.log(stringSplit);
+//   var longestWord = 1;
+//   for(var i = 0; i < stringSplit.length; i+= 1){
+//     console.log(stringSplit[i]);
+//     if (stringSplit[i].length > longestWord) {
+//       console.log(stringSplit[i].length);
+//       longestWord = stringSplit[i];
+//       console.log(longestWord);
+//      }
+//   }
+//   return longestWord;
+// }
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+
+let numbers = ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"];
+// Метод перебирання forEach
+numbers.forEach(function (number, index) {
+  console.log(`Індекс ${index}, значення ${number}`);
+});
+console.log(numbers.forEach.length)
+
+
+//  3.3
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment.rating;
+// const aptDescr = apartment.descr;
+// const aptPrice = apartment.price;
+// const aptTags = apartment.tags;
+// Change code above this line
+
+// 4.3
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+
+// Change code below this line
+// const ownerName = apartment.owner.name;
+// const ownerPhone = apartment.owner.phone;
+// const ownerEmail = apartment.owner.email;
+// const numberOfTags = apartment.tags.length;
+// const firstTag = apartment.tags[0];
+// console.log(firstTag);
+// const lastTag = apartment.tags[apartment.tags.length -1];
+// console.log(lastTag);
+// Change code above this line
+
+// 5.3
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+// };
+
+// // Change code below this line
+// const aptRating = apartment["rating"];
+// const aptDescr = apartment["descr"];
+// const aptPrice = apartment["price"];
+// const aptTags = apartment["tags"];
+// // Change code above this line
+
+// 6.3
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+//   tags: ["premium", "promoted", "top"],
+//   owner: {
+//     name: "Henry",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.price = 5000;
+// apartment.rating = 4.7;
+// apartment.owner.name = "Henry Sibola";
+// apartment.tags.push("trusted");
+// console.log(apartment.tags)
+// Change code below this line
+
+// 7.3
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4.7,
+  price: 5000,
+  tags: ["premium", "promoted", "top", "trusted"],
+  owner: {
+    name: "Henry Sibola",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+apartment.area = 60;
+apartment.rooms = 3;
+apartment.location = {country: "Jamaica"};
+apartment.location = {city: "Kingston" };
