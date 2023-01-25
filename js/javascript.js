@@ -923,18 +923,18 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 // 21.2
 function findLongestWord(string) {
   const splitString = string.split(" ");
-  // console.log(splitString);
+  console.log(splitString);
   let wordsLength = 0;
-  let longestWord;
+  // let longestWord;
 
   for (let i = 0; i < splitString.length; i = + 1) {
     wordsLength = splitString[i].length;
-
-    if (splitString[i].length > wordsLength) {
+  
+//     if (splitString[i].length > wordsLength) {
 //       longestWord = splitString[i];
-// console.log(longestWord)
+// // console.log(longestWord)
       
-    }
+//     }
     
   }
 
@@ -967,7 +967,7 @@ function findLongestWord(string) {
 //       longestWord = stringSplit[i].length;
       
       
-//     }
+    }
 //     console.log(stringSplit[i].length)
 //     console.log(longestWord);
 // }
@@ -975,8 +975,8 @@ function findLongestWord(string) {
 
 
 //   // Change code above this line
-}
-console.log(findLongestWord("T qck broootytyown fox jumped over the lazy dog"));
+// }
+// console.log(findLongestWord("T qck broootytyown fox jumped over the lazy dog"));
 findLongestWord("T qck broootytyown fox jumped over the lazy dog");
 findLongestWord("Gole dooremar a roll");
 findLongestWord("M e for be witytha you");
