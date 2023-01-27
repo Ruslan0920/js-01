@@ -922,11 +922,25 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 
 // 21.2
 
-// function findLongestWord(string) {
-//   const splitString = string.split(" ");
-//   console.log(splitString);
-//   let wordsLength = 0;
-//   // let longestWord;
+function findLongestWord(string) {
+  const splitString = string.split(" ");
+  console.log(splitString);
+  let wordsLength = 0;
+  console.log(wordsLength);
+  // let longestWord;
+  for (const word of splitString) {
+    if (word > splitString.length) {
+      console.log(splitString.length);
+      word = wordsLength;
+      console.log(wordsLength);
+    }
+  }
+}
+findLongestWord("T qck broootytyown fox jumped over the lazy dog");
+findLongestWord("Gole dooremar a roll");
+findLongestWord("My e for be witytha you");
+findLongestWord("Mayor the forceshing be with you")
+
 
 //   for (let i = 0; i < splitString.length; i = + 1) {
 //     wordsLength = splitString[i].length;
@@ -1191,20 +1205,84 @@ console.log(numbers.forEach.length)
 // Change code below this line
 
 // 7.3
-const apartment = {
-  imgUrl: "https://via.placeholder.com/640x480",
-  descr: "Spacious apartment in the city center",
-  rating: 4.7,
-  price: 5000,
-  tags: ["premium", "promoted", "top", "trusted"],
-  owner: {
-    name: "Henry Sibola",
-    phone: "982-126-1588",
-    email: "henry.carter@aptmail.com",
-  },
-};
-apartment.area = 60;
-apartment.rooms = 3;
-apartment.location = {country: "Jamaica"};
-apartment.location = {city: "Kingston" };
+// const apartment = {
+//   imgUrl: "https://via.placeholder.com/640x480",
+//   descr: "Spacious apartment in the city center",
+//   rating: 4.7,
+//   price: 5000,
+//   tags: ["premium", "promoted", "top", "trusted"],
+//   owner: {
+//     name: "Henry Sibola",
+//     phone: "982-126-1588",
+//     email: "henry.carter@aptmail.com",
+//   },
+// };
+// apartment.area = 60;
+// console.log(apartment.area);
+// apartment.rooms = 3;
+// apartment.location = {country : "Jamaica"} ;
+// console.log(apartment.location.country);
+// apartment.location.city = "Kingston";
+// console.log(apartment.location.city);
+// console.log(apartment.owner.name)
 
+
+// 8.3
+const name = "Repair Droid";
+const price = 2500;
+const image = "https://via.placeholder.com/640x480";
+const tags = ["on sale", "trending", "best buy"];
+
+const product = {
+  // Change code below this line
+  name,
+  price,
+  image,
+  tags
+  // Change code above this line
+};
+console.log(product.name, price, image, tags);
+
+// 9.3
+const emailInputName = "email";
+const passwordInputName = "password";
+
+const credentials = {
+  // Change code below this line
+  [emailInputName] : "henry.carter@aptmail.com",
+  [passwordInputName]: "jqueryismyjam",
+  // Change code above this line
+};
+console.log([credentials.email, credentials.password])
+
+// 10.3
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості з таким ключем
+//   console.log(book[key]);
+// }
+
+const apartment = {
+  descr: "Spacious apartment in the city center",
+  rating: 4,
+  price: 2153,
+};
+const keys = [];
+console.log(keys);
+const values = [];
+console.log(values);
+// Change code below this line
+for (const key in apartment) {
+  const keys = key;
+  console.log(key);
+  const values = apartment[keys];
+  console.log(values);
+}
