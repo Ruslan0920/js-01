@@ -923,208 +923,38 @@ console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
 // 21.2
 
 function findLongestWord(string) {
-  const splitString = string.split(" ");
-  console.log(splitString);
-  let wordsLength = 0;
-  console.log(wordsLength);
-  // let longestWord;
-  for (const word of splitString) {
-    if (word > splitString.length) {
-      console.log(splitString.length);
-      word = wordsLength;
-      console.log(wordsLength);
-    }
+  const stringSplit = string.split(' ');
+  let longestWord = "";
+
+  for (let word of stringSplit) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+   }
+  
   }
+      return longestWord;
+  }
+  
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+console.log(findLongestWord("Google do a roll"));
+console.log(findLongestWord("May the force be with you"));
+
+
+// 22.2
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  console.log(numbers)
+  // Change code below this line
+  for ( let i = min; i <= max; i += 1){
+    numbers.push(i);
+    console.log(numbers.push(i))
+  }
+  // Change code above this line
+  return numbers;
 }
-findLongestWord("T qck broootytyown fox jumped over the lazy dog");
-findLongestWord("Gole dooremar a roll");
-findLongestWord("My e for be witytha you");
-findLongestWord("Mayor the forceshing be with you")
-
-
-//   for (let i = 0; i < splitString.length; i = + 1) {
-//     wordsLength = splitString[i].length;
-  
-//     if (splitString[i].length > wordsLength) {
-
-// function findLongestWord(string) {
-//   const splitString = string.split(" ");
-//   console.log(splitString);
-//   let wordsLength = 0;
-  // let longestWord;
-
-  // for (let i = 0; i < splitString.length; i = + 1) {
-  //   wordsLength = splitString[i].length;
-
-    // if (splitString[i].length > wordsLength) {
-
-//       longestWord = splitString[i];
-// // console.log(longestWord)
-      
-//
-    
-  // }
-
-//   // Change code below this line
-  //   const splitString = string.split(" ")
-  // console.log(splitString);
-  // let longestWord;
-  // for (let i = 0; i < splitString.length; i += 1) {
-  //   console.log(splitString[i]);
-  //   // const word = splitString[i].length;
-  //   // console.log(word);
-  //   longestWord = splitString[i].length < splitString[i].length;
-  //   console.log(longestWord);
-  //   // const longestWord = string[i] > string.length - 1;
-
-  // }
-  // const longStr = string.split(" ");
-  // console.log(longStr);
-  // const viewWords = longStr.length;
-  // console.log(viewWords);
-//   const stringSplit = string.split(' ');
-//   console.log(stringSplit);
-//   let longestWord = 0;
-//   // console.log(longestWord);
-
-//   for (let i = 0; i < stringSplit; i += 1) {
-//     // console.log([i])
-//     if (stringSplit[i].length > longestWord.length) {
-      
-//       longestWord = stringSplit[i].length;
-      
-      
-    // }
-//     console.log(stringSplit[i].length)
-//     console.log(longestWord);
-// }
-//  return longestWord;
-
-
-//   // Change code above this line
-// }
-// console.log(findLongestWord("T qck broootytyown fox jumped over the lazy dog"));
-// <<<<<<< HEAD
-// findLongestWord("T qck broootytyown fox jumped over the lazy dog");
-// findLongestWord("Gole dooremar a roll");
-// findLongestWord("M e for be witytha you");
-// findLongestWord("Mayor the forceshing be with you")
-// =======
-// findLongestWord("T qck broootytyown fox jumped over the lazy dog");
-// findLongestWord("Gole dooremar a roll");
-// findLongestWord("M e for be witytha you");
-// findLongestWord("Mayor the forceshing be with you")
-// >>>>>>> a443f548ff1e504896aee665e3862c0bda4a072b
-
-// function findLongestWord(string) {
-//     const splitString = string.split(" ");
-//   console.log(splitString);
-//   let wordsLength = 0;
-
-//   for (let i = 0; i < splitString.length; i += 1) {
-//     console.log(splitString[i].length);
-//     wordsLength = splitString[i].length;
-  
-//     let longestWord = splitString[i].length > wordsLength;
-//     return longestWord
-//   }
-// }
-
-// console.log(findLongestWord("T qck broootytyown fox jumped overs then lazy dog"));
-
-// function findLongestWord(str) {
-//   var strSplit = str.split(' ');
-//   var longestWord = 0;
-//   for(var i = 0; i < strSplit.length; i++){
-//     if(strSplit[i].length > longestWord){
-// 	longestWord = strSplit[i];
-//      }
-//   }
-//   return longestWord;
-// }
-// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-
-// const findLongestWord = function(str) {
-//   let arrStr = str.split(' ');
-//   let wordLength = 0;
-//   let longestWord;
-
-//   for (let i = 0; i < arrStr.length; i += 1) {
-//     wordLength = arrStr[1].length;
-
-//     if (arrStr[i].length > wordLength) {
-//       longestWord = arrStr[i];
-
-//       return longestWord;
-//     }
-
-//   }
-// };
-
-// // Вызовы функции для проверки
-// console.log(
-//   findLongestWord("The quick brown fox jumped overflowersing the lazy dog")
-// ); // вернет 'jumped'
-
-// console.log(
-//   findLongestWord("Google do a roll")
-// ); // вернет 'Google'
-
-// console.log(
-//   findLongestWord("May the force be with you")
-// ); // вернет 'force'
-
-
-// function findLongestWord(string) {
-//   // Change code below this line
-// const splitString = string.split(" ");
-  
-//   let wordsLength = 0;
-  
-
-//   for (let i = 0; i < splitString.length; i += 1) {
-//       wordsLength = splitString[i].length;
-    
-//         if (splitString[i].length > wordsLength) {
-//           let longestWord = splitString[i];
-//         }
-//     return longestWord;
-//   }
-
-
-//   // Change code above this line
-// }
-// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-// findLongestWord("The quick brown fox jumped over the lazy dog");
-// findLongestWord("Google do a roll");
-// findLongestWord("May the force be with you");
-
-
-// function findLongestWord(string) {
-//   var stringSplit = string.split(' ');
-//   console.log(stringSplit);
-//   var longestWord = 1;
-//   for(var i = 0; i < stringSplit.length; i+= 1){
-//     console.log(stringSplit[i]);
-//     if (stringSplit[i].length > longestWord) {
-//       console.log(stringSplit[i].length);
-//       longestWord = stringSplit[i];
-//       console.log(longestWord);
-//      }
-//   }
-//   return longestWord;
-// }
-// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
-// console.log(findLongestWord("Google do a roll"));
-// console.log(findLongestWord("May the force be with you"));
-
-
-let numbers = ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog"];
-// Метод перебирання forEach
-numbers.forEach(function (number, index) {
-  console.log(`Індекс ${index}, значення ${number}`);
-});
-console.log(numbers.forEach.length)
+console.log(createArrayOfNumbers(1, 3)); 
+console.log(createArrayOfNumbers(14, 17));
+console.log(createArrayOfNumbers(29, 34));
 
 
 //  3.3
@@ -1286,3 +1116,22 @@ for (const key in apartment) {
   const values = apartment[keys];
   console.log(values);
 }
+
+
+
+
+// function findLongestWord (string = " ") {
+// const stringSplit = string.split(' ');
+// let longestWord = "";
+
+//   for (const word of stringSplit) {
+//     if (word.length > longestWord.length) {
+//     longestWord = word;
+// }
+// }
+//   return longestWord; }
+
+// console.log(findLongestWord('The quick browning fox jumped oversized the lazy dog'));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+// console.log(findLongestWord("Я же в принципе делал все так же, но кроме кавычеееек"));
