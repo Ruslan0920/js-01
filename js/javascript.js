@@ -943,11 +943,11 @@ console.log(findLongestWord("May the force be with you"));
 // 22.2
 function createArrayOfNumbers(min, max) {
   const numbers = [];
-  console.log(numbers)
+  // console.log(numbers)
   // Change code below this line
   for ( let i = min; i <= max; i += 1){
     numbers.push(i);
-    console.log(numbers.push(i))
+    // console.log(numbers.push(i))
   }
   // Change code above this line
   return numbers;
@@ -955,6 +955,34 @@ function createArrayOfNumbers(min, max) {
 console.log(createArrayOfNumbers(1, 3)); 
 console.log(createArrayOfNumbers(14, 17));
 console.log(createArrayOfNumbers(29, 34));
+
+// 23.2
+function filterArray(numbers, value) {
+   // Change code below this line
+  let newMassive = 0;
+
+  // for (let number of numbers) {
+  //   if (number > value) {
+  //     newMassive = number;
+  //   }
+  // }
+  
+  for (let i = 0; i < numbers.length; i += 1) {
+    if (numbers[i] > value) {
+      console.log(numbers[i])
+      // console.log(value);
+      newMassive = numbers[i];
+    }
+  }
+  
+return newMassive;
+  // Change code above this line
+}
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([1, 2, 3, 4, 5], 4));
+console.log(filterArray([1, 2, 3, 4, 5], 5));
+console.log(filterArray([12, 24, 8, 41, 76], 38));
+console.log(filterArray([12, 24, 8, 41, 76], 20));
 
 
 //  3.3
