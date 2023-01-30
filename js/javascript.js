@@ -959,19 +959,11 @@ console.log(createArrayOfNumbers(29, 34));
 // 23.2
 function filterArray(numbers, value) {
    // Change code below this line
-  let newMassive = 0;
-
-  // for (let number of numbers) {
-  //   if (number > value) {
-  //     newMassive = number;
-  //   }
-  // }
+  let newMassive = [];
   
   for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] > value) {
-      console.log(numbers[i])
-      // console.log(value);
-      newMassive = numbers[i];
+        newMassive.push(numbers[i]);
     }
   }
   
@@ -983,6 +975,18 @@ console.log(filterArray([1, 2, 3, 4, 5], 4));
 console.log(filterArray([1, 2, 3, 4, 5], 5));
 console.log(filterArray([12, 24, 8, 41, 76], 38));
 console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+// 24.2
+function checkFruit(fruit) {
+  const fruits = ["apple", "plum", "pear", "orange"];
+
+  return fruits.includes(fruit); // Change this line
+}
+console.log(checkFruit("plum"));
+console.log(checkFruit("mandarin"));
+console.log(checkFruit("pear"));
+console.log(checkFruit("Pear"));
+console.log(checkFruit("apple"));
 
 
 //  3.3
