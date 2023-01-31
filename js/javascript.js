@@ -1118,52 +1118,77 @@ const credentials = {
 console.log([credentials.email, credentials.password])
 
 // 10.3
-// const book = {
-//   title: "The Last Kingdom",
-//   author: "Bernard Cornwell",
-//   genres: ["historical prose", "adventure"],
-//   rating: 8.38,
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
 // };
+// const keys = [];
+// console.log(keys);
+// const values = [];
+// console.log(values);
+// // Change code below this line
+// for (const key in apartment) {
+//   // console.log(key);
+//   keys.push(key);
+//   console.log(keys);
+//   // console.log(apartment[key]);
+//   values.push(apartment[key])
+//   console.log(values);
+  
+// }
+// const keys = Object.keys(apartment);
+// const values = Object.values(apartment);
 
-// for (const key in book) {
-//   // Ключ
-//   console.log(key);
-//   // Значення властивості з таким ключем
-//   console.log(book[key]);
+// 11.3
+// const keys = [];
+// const values = [];
+// const advert = {
+//   service: "apt",
+// };
+// const apartment = Object.create(advert);
+// apartment.descr = "Spacious apartment in the city center";
+// apartment.rating = 4;
+// apartment.price = 2153;
+// // Change code below this line
+// for (const key in apartment) {
+//   if (apartment.hasOwnProperty(key)) {
+//    keys.push(key);
+//   console.log(keys);
+
+//   values.push(apartment[key])
+//   console.log(values);
+//  }
 // }
 
+// 12.3
+function countProps(object) {
+  let propCount = 0;
+  // Change code below this line
+  for (const key in object) {
+    if (object.hasOwnProperty(key)) {
+      propCount += 1;
+    }
+}
+  // Change code above this line
+  return propCount;
+}
+console.log(countProps({}));
+console.log(countProps({ name: "Mango", age: 2 }));
+console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+
+
+// 13.3
 const apartment = {
   descr: "Spacious apartment in the city center",
   rating: 4,
   price: 2153,
 };
-const keys = [];
-console.log(keys);
 const values = [];
-console.log(values);
 // Change code below this line
-for (const key in apartment) {
-  const keys = key;
-  console.log(key);
-  const values = apartment[keys];
-  console.log(values);
+const keys = Object.keys(apartment);
+console.log(keys )
+for (const key in keys) {
+  console.log(key)
 }
 
-
-
-
-// function findLongestWord (string = " ") {
-// const stringSplit = string.split(' ');
-// let longestWord = "";
-
-//   for (const word of stringSplit) {
-//     if (word.length > longestWord.length) {
-//     longestWord = word;
-// }
-// }
-//   return longestWord; }
-
-// console.log(findLongestWord('The quick browning fox jumped oversized the lazy dog'));
-// console.log(findLongestWord("Google do a roll"));
-// console.log(findLongestWord("May the force be with you"));
-// console.log(findLongestWord("Я же в принципе делал все так же, но кроме кавычеееек"));
