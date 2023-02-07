@@ -1311,3 +1311,55 @@ console.log(getAllPropValues("name"));
 console.log(getAllPropValues("quantity"));
 console.log(getAllPropValues("price"));
 console.log(getAllPropValues("category"));
+
+
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Класичний for
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //   console.log(`Індекс ${i}, значення ${numbers[i]}`);
+// // }
+
+// // Метод перебирання forEach
+// numbers.forEach(function (num, index) {
+//   console.log(`Індекс ${index}, значення ${num}...`);
+// });
+
+const arrowAdd = (a, b, c) => {
+  return a + b + c;
+  
+};
+console.log(arrowAdd(a, b, c))
+
+// const add = (a, b, c) => {
+//   return a + b + c;
+// };
+
+
+const add = a => {
+  return a + 5;
+};
+console.log(add(a))
+
+const greet = () => {
+  console.log("Привіт!");
+};
+greet()
+
+
+// const numbers = [5, 10, 15, 20, 25];
+
+// // Оголошення функції
+// // numbers.forEach(function (number, index) {
+// //   console.log(`Індекс ${index}, значення ${number}`);
+// // });
+
+// // Анонімна стрілочна функція
+// numbers.forEach((nu, index) => {
+//   console.log(`Індекс ${index}, значення ${nu}`);
+// });
+
+const numbers = [1, 2, 3, 4, 5];
+const filteredNumbers = numbers.filter(petya => petya > 3);
+console.log(filteredNumbers); // [4, 5]
