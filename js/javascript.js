@@ -1296,13 +1296,18 @@ function getAllPropValues(propName) {
   // Change code below this line
   let name = [];
   let quantity = [];
+  let price = [];
+  
+
 for (const product of products) {
   // console.log(product);
   // name = product.name;
   name.push(product.name)
   console.log(name);
-  quantity.push(product.price);
+  quantity.push(product.quantity);
   console.log(quantity);
+  price.push(product.price);
+  console.log(price);
 //     if (product.name === productName) {
 //   return product.price;
     }
