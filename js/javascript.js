@@ -1295,11 +1295,14 @@ const products = [
 function getAllPropValues(propName) {
   // Change code below this line
   let name = [];
+  let quantity = [];
 for (const product of products) {
   // console.log(product);
   // name = product.name;
   name.push(product.name)
   console.log(name);
+  quantity.push(product.price);
+  console.log(quantity);
 //     if (product.name === productName) {
 //   return product.price;
     }
@@ -1363,3 +1366,21 @@ greet()
 const numbers = [1, 2, 3, 4, 5];
 const filteredNumbers = numbers.filter(petya => petya > 3);
 console.log(filteredNumbers); // [4, 5]
+
+
+const tweets = [
+  { id: "000", likes: 5, tags: ["js", "nodejs"] },
+  { id: "001", likes: 2, tags: ["html", "css"] },
+  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+  { id: "003", likes: 8, tags: ["css", "react"] },
+  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+
+const getTags = tweets =>
+  tweets.reduce((allTags, tweet) => {
+    allTags.push(...tweet.tags);
+
+    return allTags;
+  }, []);
+
+console.log(getTags(tweets));
