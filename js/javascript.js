@@ -1451,22 +1451,29 @@ function getCommonElements(firstArray, secondArray) {
   //     commonElements.push(firstArray[i]);
   //   }
   // }
-
+  let firstMassive = 0;
+  let secondMassive = 0;
   firstArray.forEach(function getCommonElements(number) {
-    console.log(number)
-    if (this.number === secondArray.number) {
-      console.lo
-      commonElements.push(number)
+    // console.log(number)
+    firstMassive = number;
+    console.log(firstMassive)
+    if (secondArray.includes(firstMassive)) {
+      
+      commonElements.push(firstMassive)
     }
   })
   secondArray.forEach(function getCommonElements(number) {
-    console.log(number)
- 
+    
+    secondMassive = number;
+    console.log(secondMassive)
+    
+    // console.log(secondMassive)
   } )
 
   return commonElements;
   // Change code above this line
 }
+// console.log(getCommonElements([1, 2, 3], [1, 2, 3]));
 console.log(getCommonElements([1, 2, 3], [2, 4]));
 console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
@@ -1488,26 +1495,26 @@ console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
 //   console.log(`Індекс ${index}, значення ${num}...`);
 // });
 
-const arrowAdd = (a, b, c) => {
-  return a + b + c;
+// const arrowAdd = (a, b, c) => {
+//   return a + b + c;
   
-};
-console.log(arrowAdd(a, b, c))
+// };
+// console.log(arrowAdd(a, b, c))
 
 // const add = (a, b, c) => {
 //   return a + b + c;
 // };
 
 
-const add = a => {
-  return a + 5;
-};
-console.log(add(a))
+// const add = a => {
+//   return a + 5;
+// };
+// console.log(add(a))
 
-const greet = () => {
-  console.log("Привіт!");
-};
-greet()
+// const greet = () => {
+//   console.log("Привіт!");
+// };
+// greet()
 
 
 // const numbers = [5, 10, 15, 20, 25];
@@ -1522,24 +1529,24 @@ greet()
 //   console.log(`Індекс ${index}, значення ${nu}`);
 // });
 
-const numbers = [1, 2, 3, 4, 5];
-const filteredNumbers = numbers.filter(petya => petya > 3);
-console.log(filteredNumbers); // [4, 5]
+// const numbers = [1, 2, 3, 4, 5];
+// const filteredNumbers = numbers.filter(petya => petya > 3);
+// console.log(filteredNumbers); // [4, 5]
 
 
-const tweets = [
-  { id: "000", likes: 5, tags: ["js", "nodejs"] },
-  { id: "001", likes: 2, tags: ["html", "css"] },
-  { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
-  { id: "003", likes: 8, tags: ["css", "react"] },
-  { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
-];
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
 
-const getTags = tweets =>
-  tweets.reduce((allTags, tweet) => {
-    allTags.push(...tweet.tags);
+// const getTags = tweets =>
+//   tweets.reduce((allTags, tweet) => {
+//     allTags.push(...tweet.tags);
 
-    return allTags;
-  }, []);
+//     return allTags;
+//   }, []);
 
-console.log(getTags(tweets));
+// console.log(getTags(tweets));
