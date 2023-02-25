@@ -1723,7 +1723,7 @@ const users = [
 ];
 
 
-const getUserNames = users.map(({ name }) => name) 
+const getUserNames = users.map(user => user.name);
 console.log(getUserNames)
   // Change code above this line
 
