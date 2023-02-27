@@ -232,21 +232,21 @@ console.log(checkAge(38));
 // console.log(checkStorage(150, 180));
 
 
-let a = 5;
-let b = 10;
-let c = 15;
-let d = 20;
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
 
-// Change code below this line
-a += 2;
-b -= 4;
-c *= 3;
-d /= 10;
+// // Change code below this line
+// a += 2;
+// b -= 4;
+// c *= 3;
+// d /= 10;
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
 
 function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
   let message;
@@ -869,39 +869,39 @@ console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
 
 
 // 17.2
-const start = 3;
-const end = 7;
+// const start = 3;
+// const end = 7;
 
-for (let i = start; i <= end; i += 1) { // Change this line
-  console.log(i);
-}
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
 
 
 // 18.2
-function calculateTotal(number) {
- // Change code below this line
-  let total = 0;
-  for (let i = 1; i <= number; i += 1) {
-     total += i;
-    }
-  return total;
+// function calculateTotal(number) {
+//  // Change code below this line
+//   let total = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//      total += i;
+//     }
+//   return total;
 
-  // Change code above this line
-}
-console.log(calculateTotal(1));
-console.log(calculateTotal(3));
-console.log(calculateTotal(7));
-console.log(calculateTotal(18));
-console.log(calculateTotal(24));
+//   // Change code above this line
+// }
+// console.log(calculateTotal(1));
+// console.log(calculateTotal(3));
+// console.log(calculateTotal(7));
+// console.log(calculateTotal(18));
+// console.log(calculateTotal(24));
 
 
 // 19.2
-const fruits = ['apple', 'plum', 'pear', 'orange'];
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-for (let i = 0; i < fruits.length; i += 1) { // Change this line
-  const fruit = fruits[i]; // Change this line
-  console.log(fruit);
-}
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
 
 
 // 20.2
@@ -941,20 +941,20 @@ console.log(findLongestWord("May the force be with you"));
 
 
 // 22.2
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
-  // console.log(numbers)
-  // Change code below this line
-  for ( let i = min; i <= max; i += 1){
-    numbers.push(i);
-    // console.log(numbers.push(i))
-  }
-  // Change code above this line
-  return numbers;
-}
-console.log(createArrayOfNumbers(1, 3)); 
-console.log(createArrayOfNumbers(14, 17));
-console.log(createArrayOfNumbers(29, 34));
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // console.log(numbers)
+//   // Change code below this line
+//   for ( let i = min; i <= max; i += 1){
+//     numbers.push(i);
+//     // console.log(numbers.push(i))
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3));
+// console.log(createArrayOfNumbers(14, 17));
+// console.log(createArrayOfNumbers(29, 34));
 
 // 23.2
 // function filterArray(numbers, value) {
@@ -977,16 +977,186 @@ console.log(createArrayOfNumbers(29, 34));
 // console.log(filterArray([12, 24, 8, 41, 76], 20));
 
 // 24.2
-function checkFruit(fruit) {
-  const fruits = ["apple", "plum", "pear", "orange"];
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
 
-  return fruits.includes(fruit); // Change this line
+//   return fruits.includes(fruit); // Change this line
+// }
+// console.log(checkFruit("plum"));
+// console.log(checkFruit("mandarin"));
+// console.log(checkFruit("pear"));
+// console.log(checkFruit("Pear"));
+// console.log(checkFruit("apple"));
+
+
+// 25.2
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   const commonElements = [];
+//   for (let i = 0; i < array1.length; i += 1){
+//     // console.log(array1[i])
+//     // console.log(array2[i])
+//     if (array2.includes(array1[i])) {
+      
+//       commonElements.push(array1[i])
+//     }
+    
+//   }
+// return commonElements
+
+//  // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+
+// 26.2
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   // for (let i = 0; i < order.length; i += 1) {
+//   //   total += order[i];
+//   // }
+//   for (const number of order) {
+//     total += number;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// console.log(calculateTotalPrice([]));
+
+
+// 27.2
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   const number = numbers[i];
+
+//   //   if (number > value) {
+//   //     filteredNumbers.push(number);
+//   //   }
+//   // }
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+// console.log(filterArray([1, 2, 3, 4, 5], 4));
+// console.log(filterArray([1, 2, 3, 4, 5], 5));
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+// console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+
+// 28.2
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
+
+// 29.2
+// function getEvenNumbers(start, end) {
+//   // console.log(end)
+// //    // Change code below this line
+  
+//   let evenNumbers = [];
+//   // console.log(evenNumbers)
+
+//   for (let i = start; i <= end; i +=1) {
+//     // console.log(i)
+//     let allNumbers = i;
+//     // console.log(allNumbers)
+//     // evenNumbers.push(allNumbers)
+//     // console.log(evenNumbers)
+
+//     if (allNumbers % 2 ===0) {
+//       evenNumbers.push(allNumbers)
+//       // console.log(evenNumbers)
+//     }
+//   }
+// return evenNumbers
+
+
+// //     // Change code above this line
+// }
+// console.log(getEvenNumbers(2, 5));
+// console.log(getEvenNumbers(3, 11));
+// console.log(getEvenNumbers(6, 12));
+// console.log(getEvenNumbers(8, 8));
+// console.log(getEvenNumbers(7, 7));
+
+
+// 30.2
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// console.log(number);
+
+
+// 31.2
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       // break;
+//       return number;
+//     }
+//   }
+
+//   return number;
+//   // Change code above this line
+// }
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+// console.log(findNumber(6, 9, 4));
+// console.log(findNumber(16, 35, 7));
+
+
+// 32.2
+function includes(array, value) {
+  // Change code below this line
+
+  // Change code above this line
 }
-console.log(checkFruit("plum"));
-console.log(checkFruit("mandarin"));
-console.log(checkFruit("pear"));
-console.log(checkFruit("Pear"));
-console.log(checkFruit("apple"));
+console.log(includes([1, 2, 3, 4, 5], 3));
+console.log(includes([1, 2, 3, 4, 5], 17));
+console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+
 
 
 //  3.3
@@ -1090,32 +1260,32 @@ console.log(checkFruit("apple"));
 
 
 // 8.3
-const name = "Repair Droid";
-const price = 2500;
-const image = "https://via.placeholder.com/640x480";
-const tags = ["on sale", "trending", "best buy"];
+// const name = "Repair Droid";
+// const price = 2500;
+// const image = "https://via.placeholder.com/640x480";
+// const tags = ["on sale", "trending", "best buy"];
 
-const product = {
-  // Change code below this line
-  name,
-  price,
-  image,
-  tags
-  // Change code above this line
-};
-console.log(product.name, price, image, tags);
+// const product = {
+//   // Change code below this line
+//   name,
+//   price,
+//   image,
+//   tags
+//   // Change code above this line
+// };
+// console.log(product.name, price, image, tags);
 
-// 9.3
-const emailInputName = "email";
-const passwordInputName = "password";
+// // 9.3
+// const emailInputName = "email";
+// const passwordInputName = "password";
 
-const credentials = {
-  // Change code below this line
-  [emailInputName] : "henry.carter@aptmail.com",
-  [passwordInputName]: "jqueryismyjam",
-  // Change code above this line
-};
-console.log([credentials.email, credentials.password])
+// const credentials = {
+//   // Change code below this line
+//   [emailInputName] : "henry.carter@aptmail.com",
+//   [passwordInputName]: "jqueryismyjam",
+//   // Change code above this line
+// };
+// console.log([credentials.email, credentials.password])
 
 // 10.3
 // const apartment = {
@@ -1162,20 +1332,20 @@ console.log([credentials.email, credentials.password])
 // }
 
 // 12.3
-function countProps(object) {
-  let propCount = 0;
-  // Change code below this line
-  for (const key in object) {
-    if (object.hasOwnProperty(key)) {
-      propCount += 1;
-    }
-}
-  // Change code above this line
-  return propCount;
-}
-console.log(countProps({}));
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+// function countProps(object) {
+//   let propCount = 0;
+//   // Change code below this line
+//   for (const key in object) {
+//     if (object.hasOwnProperty(key)) {
+//       propCount += 1;
+//     }
+// }
+//   // Change code above this line
+//   return propCount;
+// }
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
 
 // 13.3
@@ -1195,66 +1365,66 @@ console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
 
 // 14.3
-function countProps(object) {
-  // Change code below this line
-  let propCount = Object.keys(object).length;
+// function countProps(object) {
+//   // Change code below this line
+//   let propCount = Object.keys(object).length;
 
-  return propCount;
-  // Change code above this line
-}
-console.log(countProps({}));
-console.log(countProps({ name: "Mango", age: 2 }));
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
+//   return propCount;
+//   // Change code above this line
+// }
+// console.log(countProps({}));
+// console.log(countProps({ name: "Mango", age: 2 }));
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
 
 
 // 15.3
-const apartment = {
-  descr: "Spacious apartment in the city center",
-  rating: 4,
-  price: 2153,
-};
-// Change code below this line
-const keys = Object.keys(apartment);
-console.log(keys);
-const values = Object.values(apartment);
-console.log(values);
+// const apartment = {
+//   descr: "Spacious apartment in the city center",
+//   rating: 4,
+//   price: 2153,
+// };
+// // Change code below this line
+// const keys = Object.keys(apartment);
+// console.log(keys);
+// const values = Object.values(apartment);
+// console.log(values);
 
 
 // 16.3
-function countTotalSalary(salaries) {
-  let totalSalary = 0;
-  // Change code below this line
-  const values = Object.values(salaries);
-  console.log(values);
-  for (let value of values)
-    totalSalary += value;
-  // Change code above this line
-  return totalSalary;
-}
-console.log(countTotalSalary({}));
-console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
-console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
+// function countTotalSalary(salaries) {
+//   let totalSalary = 0;
+//   // Change code below this line
+//   const values = Object.values(salaries);
+//   console.log(values);
+//   for (let value of values)
+//     totalSalary += value;
+//   // Change code above this line
+//   return totalSalary;
+// }
+// console.log(countTotalSalary({}));
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
 
 
 // 17.3
-const colors = [
-  { hex: "#f44336", rgb: "244,67,54" },
-  { hex: "#2196f3", rgb: "33,150,243" },
-  { hex: "#4caf50", rgb: "76,175,80" },
-  { hex: "#ffeb3b", rgb: "255,235,59" },
-];
+// const colors = [
+//   { hex: "#f44336", rgb: "244,67,54" },
+//   { hex: "#2196f3", rgb: "33,150,243" },
+//   { hex: "#4caf50", rgb: "76,175,80" },
+//   { hex: "#ffeb3b", rgb: "255,235,59" },
+// ];
 
 
-const hexColors = [];
-const rgbColors = [];
-// Change code below this line
-for (let color of colors) {
-  // console.log(color.rgb);
-  hexColors.push(color.hex);
-  console.log(hexColors);
-  rgbColors.push(color.rgb);
-  console.log(rgbColors);
-}
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+// for (let color of colors) {
+//   // console.log(color.rgb);
+//   hexColors.push(color.hex);
+//   console.log(hexColors);
+//   rgbColors.push(color.rgb);
+//   console.log(rgbColors);
+// }
 
 
 // 18.3
@@ -1285,40 +1455,40 @@ for (let color of colors) {
 
 
 // 19.3
-const products = [
-  { name: "Radar", price: 1300, quantity: 4 },
-  { name: "Scanner", price: 2700, quantity: 3 },
-  { name: "Droid", price: 400, quantity: 7 },
-  { name: "Grip", price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
 
-function getAllPropValues(propName) {
-  // Change code below this line
-  let name = [];
-  let quantity = [];
-  let price = [];
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   let name = [];
+//   let quantity = [];
+//   let price = [];
   
 
-for (const product of products) {
-  // console.log(product);
-  // name = product.name;
-  name.push(product.name)
-  console.log(name);
-  quantity.push(product.quantity);
-  console.log(quantity);
-  price.push(product.price);
-  console.log(price);
-//     if (product.name === productName) {
-//   return product.price;
-    }
+// for (const product of products) {
+//   // console.log(product);
+//   // name = product.name;
+//   name.push(product.name)
+//   console.log(name);
+//   quantity.push(product.quantity);
+//   console.log(quantity);
+//   price.push(product.price);
+//   console.log(price);
+// //     if (product.name === productName) {
+// //   return product.price;
+//     }
 
 
-  // Change code above this line
-}
-console.log(getAllPropValues("name"));
-console.log(getAllPropValues("quantity"));
-console.log(getAllPropValues("price"));
-console.log(getAllPropValues("category"));
+//   // Change code above this line
+// }
+// console.log(getAllPropValues("name"));
+// console.log(getAllPropValues("quantity"));
+// console.log(getAllPropValues("price"));
+// console.log(getAllPropValues("category"));
 
 
 // 1.4
@@ -1368,33 +1538,33 @@ console.log(getAllPropValues("category"));
 
 
 // 4.4
-const pizzaPalace = {
-  pizzas: ["Ultracheese", "Smoked", "Four meats"],
-  order(pizzaName, onSuccess, onError) {    
-      if (this.pizzas.includes(pizzaName)) {
-        return onSuccess(pizzaName);
-    }
-    return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
-    } 
-   }
+// const pizzaPalace = {
+//   pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//   order(pizzaName, onSuccess, onError) {    
+//       if (this.pizzas.includes(pizzaName)) {
+//         return onSuccess(pizzaName);
+//     }
+//     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+//     } 
+//    }
 
-// Change code above this line
+// // Change code above this line
 
-// Callback for onSuccess
-function makePizza(pizzaName) {
-      return `Your order is accepted. Cooking pizza ${pizzaName}.`;
-  }
+// // Callback for onSuccess
+// function makePizza(pizzaName) {
+//       return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+//   }
 
-// Callback for onError
-function onOrderError(error) {
-  return `Error! ${error}`;
-}
+// // Callback for onError
+// function onOrderError(error) {
+//   return `Error! ${error}`;
+// }
 
-// Method calls with callbacks
-console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
-console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
-console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
-console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
+// // Method calls with callbacks
+// console.log(pizzaPalace.order("Smoked", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Four meats", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Big Mike", makePizza, onOrderError));
+// console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
 
 
 // 5.4
@@ -1547,39 +1717,39 @@ console.log(pizzaPalace.order("Vienna", makePizza, onOrderError));
 
 
 // 13.4
-function changeEven(numbers, value) {
-  // Change code below this line
-  const newArray = [];
-  // for (let i = 0; i < numbers.length; i += 1) {
-  //   if (numbers[i] % 2 === 0) {
+// function changeEven(numbers, value) {
+//   // Change code below this line
+//   const newArray = [];
+//   // for (let i = 0; i < numbers.length; i += 1) {
+//   //   if (numbers[i] % 2 === 0) {
       
-  //     numbers[i] = numbers[i] + value;
+//   //     numbers[i] = numbers[i] + value;
    
-  //     newArray.push(numbers[i], numbers)
-  //   }
-  //   return newArray;
-  // }
-  numbers.forEach(element => {
-    if(element % 2 === 0)
-      newArray.push(element + value);
-    else newArray.push(element)
-  })
+//   //     newArray.push(numbers[i], numbers)
+//   //   }
+//   //   return newArray;
+//   // }
+//   numbers.forEach(element => {
+//     if(element % 2 === 0)
+//       newArray.push(element + value);
+//     else newArray.push(element)
+//   })
 
-  return newArray;
+//   return newArray;
 
-  // Change code above this line
-}
-console.log(changeEven([1, 2, 3, 4, 5], 10));
-console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
-console.log(changeEven([17, 24, 68, 31, 42], 100));
-console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+//   // Change code above this line
+// }
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([17, 24, 68, 31, 42], 100));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
 
 
 // 14.4
-const planets = ["Earth", "Mars", "Venus", "Jupiter"];
-// Change code below this line
-const planetsLengths = planets.map(planet => planet.length);
-console.log(planetsLengths);
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+// // Change code below this line
+// const planetsLengths = planets.map(planet => planet.length);
+// console.log(planetsLengths);
 
 
 // 15.4
@@ -1617,114 +1787,114 @@ console.log(planetsLengths);
 
 
 // 16.4
-const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["adventure", "history"],
-  },
-  {
-    title: "Beside Still Waters",
-    author: "Robert Sheckley",
-    genres: ["fiction"],
-  },
-  {
-    title: "Redder Than Blood",
-    author: "Tanith Lee",
-    genres: ["horror", "mysticism"],
-  },
-];
-// Change code below this line
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism"],
+//   },
+// ];
+// // Change code below this line
 
-const genres = books.flatMap(({ genres }) => genres);
-console.log(genres);
+// const genres = books.flatMap(({ genres }) => genres);
+// console.log(genres);
 
 
 // 17.4
 // Change code below this line
-const users = [
-  {
-    name: "Moore Hensley",
-    email: "moorehensley@indexia.com",
-    eyeColor: "blue",
-    friends: ["Sharron Pace"],
-    isActive: false,
-    balance: 2811,
-    skills: ["ipsum", "lorem"],
-    gender: "male",
-    age: 37,
-  },
-  {
-    name: "Sharlene Bush",
-    email: "sharlenebush@tubesys.com",
-    eyeColor: "blue",
-    friends: ["Briana Decker", "Sharron Pace"],
-    isActive: true,
-    balance: 3821,
-    skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
-    gender: "female",
-    age: 34,
-  },
-  {
-    name: "Ross Vazquez",
-    email: "rossvazquez@xinware.com",
-    eyeColor: "green",
-    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-    isActive: false,
-    balance: 3793,
-    skills: ["nulla", "anim", "proident", "ipsum", "elit"],
-    gender: "male",
-    age: 24,
-  },
-  {
-    name: "Elma Head",
-    email: "elmahead@omatom.com",
-    eyeColor: "green",
-    friends: ["Goldie Gentry", "Aisha Tran"],
-    isActive: true,
-    balance: 2278,
-    skills: ["adipisicing", "irure", "velit"],
-    gender: "female",
-    age: 21,
-  },
-  {
-    name: "Carey Barr",
-    email: "careybarr@nurali.com",
-    eyeColor: "blue",
-    friends: ["Jordan Sampson", "Eddie Strong"],
-    isActive: true,
-    balance: 3951,
-    skills: ["ex", "culpa", "nostrud"],
-    gender: "male",
-    age: 27,
-  },
-  {
-    name: "Blackburn Dotson",
-    email: "blackburndotson@furnigeer.com",
-    eyeColor: "brown",
-    friends: ["Jacklyn Lucas", "Linda Chapman"],
-    isActive: false,
-    balance: 1498,
-    skills: ["non", "amet", "ipsum"],
-    gender: "male",
-    age: 38,
-  },
-  {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
-    isActive: true,
-    balance: 2764,
-    skills: ["lorem", "veniam", "culpa"],
-    gender: "female",
-    age: 39,
-  },
-];
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     skills: ["ipsum", "lorem"],
+//     gender: "male",
+//     age: 37,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//     gender: "female",
+//     age: 34,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//     gender: "male",
+//     age: 24,
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     skills: ["adipisicing", "irure", "velit"],
+//     gender: "female",
+//     age: 21,
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     skills: ["ex", "culpa", "nostrud"],
+//     gender: "male",
+//     age: 27,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     skills: ["non", "amet", "ipsum"],
+//     gender: "male",
+//     age: 38,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     skills: ["lorem", "veniam", "culpa"],
+//     gender: "female",
+//     age: 39,
+//   },
+// ];
 
 
-const getUserNames = users.map(user => user.name);
-console.log(getUserNames)
+// const getUserNames = users.map(user => user.name);
+// console.log(getUserNames)
   // Change code above this line
 
 
