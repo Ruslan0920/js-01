@@ -1457,6 +1457,28 @@ console.log(findLongestWord("May the force be with you"));
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Engine"));
 
+const users = [{name: 'Poly', age: 7, mood: 'happy'},
+  {name: 'Mango', age: 4, mood: 'blissful'},
+  {name: 'Ajax', age: 3, mood: 'tired'}
+];
+
+function getAllPropValues(arr, prop) {
+  return arr.map(el => el[prop]);
+}
+
+
+// Вызовы функции для проверки
+console.log(
+  getAllPropValues(users, 'name')
+); // ['Poly', 'Mango', 'Ajax']
+
+console.log(
+  getAllPropValues(users, 'mood')
+); // ['happy', 'blissful', 'tired']
+
+console.log(
+  getAllPropValues(users, 'active')
+); // []
 
 // 19.3
 // const products = [
@@ -1467,27 +1489,49 @@ console.log(findLongestWord("May the force be with you"));
 // ];
 
 // function getAllPropValues(propName) {
-//   // Change code below this line
-//   let name = [];
-//   let quantity = [];
-//   let price = [];
+// //   // Change code below this line
+//   const allParametrs = {
+//     propName: [],
+//     name: [],
+//     quantity: [],
+//     price: [],
+//   }
+//   for (product of products) {
+//     // console.log(product)
+//     allParametrs.name.push(product.name);
+//     allParametrs.quantity.push(product.quantity);
+//     allParametrs.price.push(product.price);
+//   }
+//   // let array = [];
+//   // let quantity = [];
+//   // let price = [];
   
 
-// for (const product of products) {
-//   // console.log(product);
-//   // name = product.name;
-//   name.push(product.name)
-//   console.log(name);
-//   quantity.push(product.quantity);
-//   console.log(quantity);
-//   price.push(product.price);
-//   console.log(price);
-// //     if (product.name === productName) {
-// //   return product.price;
-//     }
+// // for (const product of products) {
+// //   // console.log(product);
+// //   // name = product.name;
+// //   name.push(product.name)
+// //   console.log(name);
+// //   quantity.push(product.quantity);
+// //   console.log(quantity);
+// //   price.push(product.price);
+// //   console.log(price);
+// // //     if (product.name === productName) {
+// // //   return product.price;
+// //     }
+// //   for (const product of products) {
+// //     // console.log(product)
+// //     array = Object.values(product.price)
+// //     // array.push(product.name);
+// //     // array.push(product.quantity);
+// //     // array.push(product.price);
+    
 
-
-//   // Change code above this line
+// //     console.log(array)
+// //     // return Object.values(products.name)
+// // }
+// return allParametrs
+// //   // Change code above this line
 // }
 // console.log(getAllPropValues("name"));
 // console.log(getAllPropValues("quantity"));
@@ -1626,7 +1670,7 @@ console.log(findLongestWord("May the force be with you"));
 //   //   }
 //   // }
   
-  // САМ ПИСАВ
+  // САМ ПРИДУМАВ
 //   let firstMassive = 0;
  
   // firstArray.forEach(function getCommonElements(number) {
@@ -1644,7 +1688,7 @@ console.log(findLongestWord("May the force be with you"));
     
   // } )
 
-  // САМ ПИСАВ
+  // САМ ПРИДУМАВ
 //   firstArray.forEach(function (element) {
 //     if (secondArray.includes(element)) {
 //       commonElements.push(element);
