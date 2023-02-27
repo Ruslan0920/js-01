@@ -1146,16 +1146,20 @@ console.log(findLongestWord("May the force be with you"));
 
 
 // 32.2
-function includes(array, value) {
-  // Change code below this line
-
-  // Change code above this line
-}
-console.log(includes([1, 2, 3, 4, 5], 3));
-console.log(includes([1, 2, 3, 4, 5], 17));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
-console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
-console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+// function includes(array, value) {
+//   // Change code below this line
+//   for (let i = 0; i < array.length; i += 1){
+//     const check = array.includes(value)
+//     return check;
+//   }
+  
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter"));
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus"));
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
 
 
 
