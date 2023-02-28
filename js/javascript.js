@@ -1538,6 +1538,8 @@ console.log(calculateTotalPrice("Grip"));
 console.log(calculateTotalPrice("Scanner"));
 
 
+
+
 // 1.4
 // function makePizza() {
 //   return "Your pizza is being prepared, please wait.";
