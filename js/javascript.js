@@ -1457,86 +1457,55 @@ console.log(findLongestWord("May the force be with you"));
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Engine"));
 
-const users = [{name: 'Poly', age: 7, mood: 'happy'},
-  {name: 'Mango', age: 4, mood: 'blissful'},
-  {name: 'Ajax', age: 3, mood: 'tired'}
-];
-
-function getAllPropValues(arr, prop) {
-  return arr.map(el => el[prop]);
-}
-
-
-// Вызовы функции для проверки
-console.log(
-  getAllPropValues(users, 'name')
-); // ['Poly', 'Mango', 'Ajax']
-
-console.log(
-  getAllPropValues(users, 'mood')
-); // ['happy', 'blissful', 'tired']
-
-console.log(
-  getAllPropValues(users, 'active')
-); // []
-
-// 19.3
-// const products = [
-//   { name: "Radar", price: 1300, quantity: 4 },
-//   { name: "Scanner", price: 2700, quantity: 3 },
-//   { name: "Droid", price: 400, quantity: 7 },
-//   { name: "Grip", price: 1200, quantity: 9 },
+// const users = [{name: 'Poly', age: 7, mood: 'happy'},
+//   {name: 'Mango', age: 4, mood: 'blissful'},
+//   {name: 'Ajax', age: 3, mood: 'tired'}
 // ];
 
-// function getAllPropValues(propName) {
-// //   // Change code below this line
-//   const allParametrs = {
-//     propName: [],
-//     name: [],
-//     quantity: [],
-//     price: [],
-//   }
-//   for (product of products) {
-//     // console.log(product)
-//     allParametrs.name.push(product.name);
-//     allParametrs.quantity.push(product.quantity);
-//     allParametrs.price.push(product.price);
-//   }
-//   // let array = [];
-//   // let quantity = [];
-//   // let price = [];
-  
-
-// // for (const product of products) {
-// //   // console.log(product);
-// //   // name = product.name;
-// //   name.push(product.name)
-// //   console.log(name);
-// //   quantity.push(product.quantity);
-// //   console.log(quantity);
-// //   price.push(product.price);
-// //   console.log(price);
-// // //     if (product.name === productName) {
-// // //   return product.price;
-// //     }
-// //   for (const product of products) {
-// //     // console.log(product)
-// //     array = Object.values(product.price)
-// //     // array.push(product.name);
-// //     // array.push(product.quantity);
-// //     // array.push(product.price);
-    
-
-// //     console.log(array)
-// //     // return Object.values(products.name)
-// // }
-// return allParametrs
-// //   // Change code above this line
+// function getAllPropValues(arr, prop) {
+//   return arr.map(el => el[prop]);
 // }
-// console.log(getAllPropValues("name"));
-// console.log(getAllPropValues("quantity"));
-// console.log(getAllPropValues("price"));
-// console.log(getAllPropValues("category"));
+
+
+// // Вызовы функции для проверки
+// console.log(
+//   getAllPropValues(users, 'name')
+// ); // ['Poly', 'Mango', 'Ajax']
+
+// console.log(
+//   getAllPropValues(users, 'mood')
+// ); // ['happy', 'blissful', 'tired']
+
+// console.log(
+//   getAllPropValues(users, 'active')
+// ); // []
+
+// 19.3
+const products = [
+  { name: "Radar", price: 1300, quantity: 4 },
+  { name: "Scanner", price: 2700, quantity: 3 },
+  { name: "Droid", price: 400, quantity: 7 },
+  { name: "Grip", price: 1200, quantity: 9 },
+];
+
+function getAllPropValues(propName) {
+//   // Change code below this line
+  let array = []
+  
+  for (const product of products) {
+    if (product[propName] === undefined) {
+      return []
+    }
+    array.push(product[propName])
+    }
+
+  return array;
+//   // Change code above this line
+}
+console.log(getAllPropValues("name"));
+console.log(getAllPropValues("quantity"));
+console.log(getAllPropValues("price"));
+console.log(getAllPropValues("category"));
 
 
 // 1.4
@@ -1588,12 +1557,12 @@ console.log(
 // 4.4
 // const pizzaPalace = {
 //   pizzas: ["Ultracheese", "Smoked", "Four meats"],
-//   order(pizzaName, onSuccess, onError) {    
+//   order(pizzaName, onSuccess, onError) {
 //       if (this.pizzas.includes(pizzaName)) {
 //         return onSuccess(pizzaName);
 //     }
 //     return onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
-//     } 
+//     }
 //    }
 
 // // Change code above this line
@@ -1941,7 +1910,11 @@ console.log(
 // ];
 
 
-// const getUserNames = users.map(user => user.name);
+// const getUserNames = (users) => {
+//   const name = users.map(user => user.name);
+//   return name;
+// }
+
 // console.log(getUserNames)
   // Change code above this line
 
