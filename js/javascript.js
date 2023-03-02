@@ -1637,20 +1637,20 @@ console.log(calculateTotalPrice("Scanner"));
 
 
 // 25.3
-const forecast = {
-  today: {
-    low: 28,
-    high: 32,
-    icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
-  },
-  tomorrow: {
-    low: 27,
-    high: 31,
-  },
-};
-// Change code below this line
-const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
-  tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } } = forecast
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
+//   tomorrow: { low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" } } = forecast
 
 // const highToday = forecast.today.high;
 // const lowToday = forecast.today.low;
@@ -1659,6 +1659,34 @@ const { today: { low: lowToday, high: highToday, icon: todayIcon = "https://www.
 // const highTomorrow = forecast.tomorrow.high;
 // const lowTomorrow = forecast.tomorrow.low;
 // const tomorrowIcon = forecast.tomorrow.icon;
+
+
+// 26.3
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const { today: { low: todayLow, high: todayHigh }, tomorrow: { low: tomorrowLow, high: tomorrowHigh } } = forecast;
+
+//   // const todayLow = forecast.today.low;
+//   // const todayHigh = forecast.today.high;
+//   // const tomorrowLow = forecast.tomorrow.low;
+//   // const tomorrowHigh = forecast.tomorrow.high;
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+// console.log(calculateMeanTemperature({ today: {low: 28, high: 32}, tomorrow: {low: 25, high: 29} }));
+// console.log(calculateMeanTemperature({ today: {low: 37, high: 40}, tomorrow: {low: 33, high: 38} }));
+
+
+// 27.3
+const scores = [89, 64, 42, 17, 93, 51, 26];
+// Change code below this line
+const bestScore = Math.max(...scores);
+const worstScore = Math.min(...scores);
+console.log(bestScore);
+console.log(worstScore);
+
+
 
 // 1.4
 // function makePizza() {
