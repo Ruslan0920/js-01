@@ -1739,12 +1739,14 @@ console.log(calculateTotalPrice("Scanner"));
 let total = 0
 function add(...args) {
   // console.log(args);
-  for (const arg of args) {
-    console.log(args);
-    // console.log(arg);
-      total += arg;
+  // for (const arg of args) {
+  //   console.log(args);
+  //   // console.log(arg);
+  //     total += arg;
+  // }
+  for (const i = 0; i < args.length; i += 1){
+    total += args 
   }
-  
  
   return total 
   // Change code above this line
