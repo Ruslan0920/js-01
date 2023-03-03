@@ -1806,27 +1806,56 @@ console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
 
 
 // 34.3
+// const bookShelf = {
+//   // Change code below this line
+//   books: ["The last kingdom", "The guardian of dreams"],
+//   getBooks() {
+//     return "Returning all books";
+//   },
+//   addBook(bookName) {
+//     return `Adding book ${bookName}`;
+//   },
+//   removeBook(bookName) {
+//     return `Deleting book ${bookName}`;
+//   },
+//   updateBook(oldName, newName) {
+//     return `Updating book ${oldName} to ${newName}`;
+//   },
+//   // Change code above this line
+// };
+// console.log(bookShelf.getBooks());
+// console.log(bookShelf.addBook("Haze"));
+// console.log(bookShelf.removeBook("Red sunset"));
+// console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+
+
+// 35.3
 const bookShelf = {
-  // Change code below this line
-  books: ["The last kingdom", "The guardian of dreams"],
-  getBooks() {
-    return "Returning all books";
-  },
-  addBook(bookName) {
-    return `Adding book ${bookName}`;
-  },
-  removeBook(bookName) {
-    return `Deleting book ${bookName}`;
-  },
+  books: ["The last kingdom", "Haze", "The guardian of dreams"],
   updateBook(oldName, newName) {
-    return `Updating book ${oldName} to ${newName}`;
+    // Change code below this line
+    const indexBook = this.books.indexOf(oldName);
+    console.log(this.books.indexOf(oldName));
+    this.books.splice(indexBook, 1, newName)
+    console.log(this.books.splice(indexBook, 1, newName));
+    
+    // for (const book of this.books) {
+    //   // console.log(book)
+    //   let oldestName = this.books.indexOf(oldName)
+    //   console.log(oldestName);
+    //   if (oldestName === oldName) {
+    //     console.log(oldestName)
+    //     console.log(oldName)
+    //     this.books.splice(2, 1, newName)
+    //   }
+    // }
+
+return this.books
+    // Change code above this line
   },
-  // Change code above this line
 };
-console.log(bookShelf.getBooks());
-console.log(bookShelf.addBook("Haze"));
-console.log(bookShelf.removeBook("Red sunset"));
-console.log(bookShelf.updateBook("Sands of dune", "Dune"));
+console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
+console.log(bookShelf.updateBook("The last kingdom", "Dune"));
 
 
 // 1.4
