@@ -1736,26 +1736,97 @@ console.log(calculateTotalPrice("Scanner"));
 
 // 31.3
 // Change code below this line
-let total = 0
-function add(...args) {
-  // console.log(args);
-  // for (const arg of args) {
-  //   console.log(args);
-  //   // console.log(arg);
-  //     total += arg;
-  // }
-  for (const i = 0; i < args.length; i += 1){
-    total += args 
-  }
+
+// function add(...args) {
+//   let total = 0
+//   console.log(args);
+//   for (const arg of args) {
+//     total += arg;
+//       }
+//   // for ( let i = 0; i < args.length; i += 1){
+//   //   // console.log(args[i])
+//   //   total += args[i]
+//   //   // console.log(total)
+//   // }
  
-  return total 
+//   return total 
+//   // Change code above this line
+// }
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+
+// 32.3
+// Change code below this line
+function addOverNum(value, ...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    if (arg > value) {
+    total += arg;  
+    }
+  }
+
+  return total;
   // Change code above this line
 }
-console.log(add(15, 27));
-console.log(add(12, 4, 11, 48));
-console.log(add(32, 6, 13, 19, 8));
-console.log(add(74, 11, 62, 46, 12, 36));
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+console.log(addOverNum(15, 32, 6, 13, 19, 8));
+console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
 
+
+// 33.3
+// Change code below this line
+function findMatches(array, ...args) {
+  // console.log(array);
+  // console.log(args);
+  const matches = []; // Don't change this line
+  // for (let i = 0; i < array.length; i += 1){
+  //   if (args.includes(array[i])) {
+  //     matches.push(array[i]);
+  //   }
+  // } 
+  for (const number of array) {
+    // console.log(number)
+    if (args.includes(number)) {
+      matches.push(number)
+    }
+}
+  
+  // Change code above this line
+  return matches;
+}
+console.log(findMatches([1, 2, 3, 4, 5], 1, 8, 2, 7));
+console.log(findMatches([4, 89, 17, 36, 2], 8, 17, 89, 27, 2));
+console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+console.log(findMatches([63, 11, 8, 29], 4, 7, 16));
+
+
+// 34.3
+const bookShelf = {
+  // Change code below this line
+  books: ["The last kingdom", "The guardian of dreams"],
+  getBooks() {
+    return "Returning all books";
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  removeBook(bookName) {
+    return `Deleting book ${bookName}`;
+  },
+  updateBook(oldName, newName) {
+    return `Updating book ${oldName} to ${newName}`;
+  },
+  // Change code above this line
+};
+console.log(bookShelf.getBooks());
+console.log(bookShelf.addBook("Haze"));
+console.log(bookShelf.removeBook("Red sunset"));
+console.log(bookShelf.updateBook("Sands of dune", "Dune"));
 
 
 // 1.4
