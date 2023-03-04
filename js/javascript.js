@@ -67,9 +67,9 @@
 //   console.log(`Число менше за ${threshold}: ${numbers[i]}`);
 // }
 
-const languages = ["C", "C++", "Java", "JavaScript"];
-languages.splice(1, 2, "Python", "Swift", "Go");
-console.log(languages);
+// const languages = ["C", "C++", "Java", "JavaScript"];
+// languages.splice(1, 2, "Python", "Swift", "Go");
+// console.log(languages);
 
 // function multiply(x, y, z) {
   
@@ -1834,21 +1834,22 @@ const bookShelf = {
   books: ["The last kingdom", "Haze", "The guardian of dreams"],
   updateBook(oldName, newName) {
     // Change code below this line
-    const indexBook = this.books.indexOf(oldName);
-    console.log(this.books.indexOf(oldName));
-    this.books.splice(indexBook, 1, newName)
-    console.log(this.books.splice(indexBook, 1, newName));
     
-    // for (const book of this.books) {
-    //   // console.log(book)
-    //   let oldestName = this.books.indexOf(oldName)
-    //   console.log(oldestName);
-    //   if (oldestName === oldName) {
-    //     console.log(oldestName)
-    //     console.log(oldName)
-    //     this.books.splice(2, 1, newName)
-    //   }
-    // }
+    // const indexBook = this.books.indexOf(oldName);
+    // console.log(this.books.indexOf(oldName));
+    // this.books.splice(indexBook, 1, newName)
+    // console.log(this.books.splice(indexBook, 1, newName));
+    
+    for (const book of this.books) {
+      console.log(book)
+      const indexBook = this.books.indexOf(oldName);
+      // console.log(this.books.indexOf(oldName))
+      if (book === oldName) {
+        this.books.splice(indexBook, 1, newName)
+        // console.log(this.books.splice(indexBook, 1, newName));
+      }
+    }
+    
 
 return this.books
     // Change code above this line
@@ -1856,6 +1857,8 @@ return this.books
 };
 console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+
+
 
 
 // 1.4
