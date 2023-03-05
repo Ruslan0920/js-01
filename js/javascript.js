@@ -1843,15 +1843,17 @@ const bookShelf = {
     for (const book of this.books) {
       console.log(book)
       const indexBook = this.books.indexOf(oldName);
-      // console.log(this.books.indexOf(oldName))
+      console.log(this.books.indexOf(oldName))
       if (book === oldName) {
         this.books.splice(indexBook, 1, newName)
-        // console.log(this.books.splice(indexBook, 1, newName));
+        console.log(this.books.splice(indexBook, 1, newName));
+        // return bookShelf.books;
       }
+      return bookShelf.books;
     }
     
 
-return this.books
+// return this.books
     // Change code above this line
   },
 };
