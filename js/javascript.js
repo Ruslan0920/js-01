@@ -2986,6 +2986,203 @@ console.log(oddNumbers);
 
 
 // 29.4
+// const users =
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// // Change code below this line
+// const getUserWithEmail = (users, email) => {
+//    return users.find(book => book.email === email)
+// };
+// // Change code above this line
+// console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
+// console.log(getUserWithEmail(users, "elmahead@omatom.com"));
+// console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
+// console.log(getUserWithEmail(users, ));
+
+
+// 30.4
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(number => number % 2 === 0);
+// console.log(eachElementInFirstIsEven);
+// const eachElementInFirstIsOdd = firstArray.every(number => number % 2 !== 0);
+// console.log(eachElementInFirstIsOdd);
+
+// const eachElementInSecondIsEven = secondArray.every(number => number % 2 === 0);
+// console.log(eachElementInSecondIsEven);
+// const eachElementInSecondIsOdd = secondArray.every(number => number % 2 !== 0);
+// console.log(eachElementInSecondIsOdd);
+
+// const eachElementInThirdIsEven = thirdArray.every(number => number % 2 === 0);
+// console.log(eachElementInThirdIsEven);
+// const eachElementInThirdIsOdd = thirdArray.every(number => number % 2 !== 0);
+// console.log(eachElementInThirdIsOdd);
+
+
+// 31.4
+// const users =
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// // Change code below this line
+// const isEveryUserActive = (users) => {
+//    return users.every(user => user.isActive);
+// };
+// console.log(isEveryUserActive(users))
+// Change code above this line
+
+
+// 32.4
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(number => number % 2 === 0);
+// console.log(anyElementInFirstIsEven);
+// const anyElementInFirstIsOdd = firstArray.some(number => number % 2 !== 0);
+// console.log(anyElementInFirstIsOdd);
+
+// const anyElementInSecondIsEven = secondArray.some(number => number % 2 === 0);
+// console.log(anyElementInSecondIsEven);
+// const anyElementInSecondIsOdd = secondArray.some(number => number % 2 !== 0);
+// console.log(anyElementInSecondIsOdd);
+
+// const anyElementInThirdIsEven = thirdArray.some(number => number % 2 === 0);
+// console.log(anyElementInThirdIsEven);
+// const anyElementInThirdIsOdd = thirdArray.some(number => number % 2 !== 0);
+// console.log(anyElementInThirdIsOdd);
+
+
+// 33.4
 const users =
 [
   {
@@ -3053,15 +3250,11 @@ const users =
   }
 ]
 // Change code below this line
-const getUserWithEmail = (users, email) => {
-   return users.find(book => book.email === email)
+const isAnyUserActive = users => {
+   return users.some(user => user.isActive);
 };
+console.log(isAnyUserActive(users))
 // Change code above this line
-console.log(getUserWithEmail(users, "shereeanthony@kog.com"));
-console.log(getUserWithEmail(users, "elmahead@omatom.com"));
-console.log(getUserWithEmail(users, "blackburndotson@furnigeer.com"));
-console.log(getUserWithEmail(users, ));
-
 
 
 // let cities = [
