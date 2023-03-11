@@ -1844,10 +1844,12 @@ const bookShelf = {
 
     // const newArray = this.books;
     // console.log(newArray)
+    
+    
     for (const book of this.books) {
       // console.log(book)
       const indexBook = this.books.indexOf(oldName);
-      console.log(indexBook)
+      // console.log(indexBook)
       // console.log(this.books.indexOf(oldName))
       if (book === oldName) {
         // console.log(book === oldName)
@@ -1856,23 +1858,24 @@ const bookShelf = {
         // console.log(this.books.splice(indexBook, 1, newName));
         
         // return bookShelf.books;
+        // break;
         
       }
-      // else {
-      //   // const indexBook = this.books.indexOf(oldName);
-      //   const indexBook = this.books.indexOf(oldName);
-      //   this.books.splice(indexBook, 1, newName)
-      //   // console.log(this.books.splice(indexBook, 1, newName));
+    //   // else {
+    //   //   // const indexBook = this.books.indexOf(oldName);
+    //   //   const indexBook = this.books.indexOf(oldName);
+    //   //   this.books.splice(indexBook, 1, newName)
+    //   //   // console.log(this.books.splice(indexBook, 1, newName));
         
+    //   //   // return this.books;
         
-        
-      // }
-      return this.books;
-      // break
+    //   // }
+    //   // return bookShelf.books;
+    //   // break
     }
     
 
-// return this.books
+return bookShelf.books
     // Change code above this line
   },
 };
