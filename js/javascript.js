@@ -1847,25 +1847,26 @@ const bookShelf = {
     for (const book of this.books) {
       // console.log(book)
       const indexBook = this.books.indexOf(oldName);
+      console.log(indexBook)
       // console.log(this.books.indexOf(oldName))
       if (book === oldName) {
         // console.log(book === oldName)
-        const indexBook = this.books.indexOf(oldName);
-        this.books.splice(indexBook, 1, newName)
-        // console.log(this.books.splice(indexBook, 1, newName));
-        
-        return bookShelf.books;
-        
-      }
-      else {
         // const indexBook = this.books.indexOf(oldName);
-        const indexBook = this.books.indexOf(oldName);
         this.books.splice(indexBook, 1, newName)
         // console.log(this.books.splice(indexBook, 1, newName));
         
-        
+        // return bookShelf.books;
         
       }
+      // else {
+      //   // const indexBook = this.books.indexOf(oldName);
+      //   const indexBook = this.books.indexOf(oldName);
+      //   this.books.splice(indexBook, 1, newName)
+      //   // console.log(this.books.splice(indexBook, 1, newName));
+        
+        
+        
+      // }
       return this.books;
       // break
     }
