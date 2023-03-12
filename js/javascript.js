@@ -1838,8 +1838,10 @@ const bookShelf = {
     
     // const indexBook = this.books.indexOf(oldName);
     // console.log(this.books.indexOf(oldName));
-    // this.books.splice(indexBook, 1, newName)
+    // // this.books.indexOf(oldName, [1]);
+    // this.books.splice(indexBook, 1, newName);
     // console.log(this.books.splice(indexBook, 1, newName));
+
 
 
     // const newArray = this.books;
@@ -1847,37 +1849,37 @@ const bookShelf = {
     
     
     for (const book of this.books) {
-      // console.log(book)
+      console.log(book)
       const indexBook = this.books.indexOf(oldName);
       // console.log(indexBook)
       // console.log(this.books.indexOf(oldName))
-      if (book === oldName) {
+      if (oldName) {
         // console.log(book === oldName)
         // const indexBook = this.books.indexOf(oldName);
-        this.books.splice(indexBook, 1, newName)
+        this.books.splice(oldName, 1, newName)
         // console.log(this.books.splice(indexBook, 1, newName));
         
         // return bookShelf.books;
         // break;
         
       }
-    //   // else {
-    //   //   // const indexBook = this.books.indexOf(oldName);
-    //   //   const indexBook = this.books.indexOf(oldName);
-    //   //   this.books.splice(indexBook, 1, newName)
-    //   //   // console.log(this.books.splice(indexBook, 1, newName));
+      // else {
+      //   // const indexBook = this.books.indexOf(oldName);
+      //   const indexBook = this.books.indexOf(oldName);
+      //   this.books.splice(indexBook, 1, newName)
+      //   // console.log(this.books.splice(indexBook, 1, newName));
         
-    //   //   // return this.books;
+      //   // return this.books;
         
-    //   // }
-    //   // return bookShelf.books;
-    //   // break
+      // }
+    // //   // return bookShelf.books;
+    // //   // break
     }
     
 
 return bookShelf.books
     // Change code above this line
-  },
+  }
 };
 console.log(bookShelf.updateBook("Haze", "Dungeon chronicles"));
 console.log(bookShelf.updateBook("The last kingdom", "Dune"));
