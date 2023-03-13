@@ -1996,7 +1996,17 @@ const atTheOldToad = {
   },
   // Change code above this line
 };
-console.log();
+console.log(atTheOldToad.getPotions());
+console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+
+console.log(atTheOldToad.removePotion("Dragon breath"));
+console.log(atTheOldToad.removePotion("Speed potion"));
+
+console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
+
+
 
 // 1.4
 // function makePizza() {
