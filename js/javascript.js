@@ -4172,7 +4172,7 @@ const pizzaPalace = {
   pizzas: ["Supercheese", "Smoked", "Four meats"],
   // Change code below this line
   checkPizza(pizzaName) {
-    return pizzas.includes(pizzaName);
+    return this.pizzas.includes(pizzaName);
   },
   order(pizzaName) {
     const isPizzaAvailable = checkPizza(pizzaName);
@@ -4185,6 +4185,11 @@ const pizzaPalace = {
   },
   // Change code above this line
 };
+console.log(pizzaPalace.checkPizza())
+console.log(pizzaPalace.order("Smoked"));
+console.log(pizzaPalace.order("Four meats"));
+console.log(pizzaPalace.order("Big Mike"));
+console.log(pizzaPalace.order("Viennese"));
 
 
 
