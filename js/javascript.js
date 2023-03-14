@@ -1970,11 +1970,17 @@ const atTheOldToad = {
     return this.potions;
   },
   addPotion(newPotion) {
-    if (this.potions.includes(newPotion)) {
-      return `Error! Potion ${newPotion} is already in your inventory!`;
-    }
+    // if (this.potions.includes(newPotion)) {
+    //   return `Error! Potion ${newPotion} is already in your inventory!`;
+    // }
 
-    this.potions.push(newPotion);
+    // this.potions.push(newPotion);
+
+    for (potion of potions) {
+      if (potion.name === newPotion.name) {
+        return `Error! Potion ${newPotion.name} is already in your inventory!`;
+      }
+    }
   },
   removePotion(potionName) {
     const potionIndex = this.potions.indexOf(potionName);
