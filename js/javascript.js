@@ -1976,20 +1976,29 @@ const atTheOldToad = {
 
     // this.potions.push(newPotion);
 
-    for (potion of potions) {
+    for (potion of this.potions) {
       if (potion.name === newPotion.name) {
         return `Error! Potion ${newPotion.name} is already in your inventory!`;
       }
     }
+    this.potions.push(newPotion);
   },
   removePotion(potionName) {
-    const potionIndex = this.potions.indexOf(potionName);
+    // const potionIndex = this.potions.indexOf(potionName);
 
-    if (potionIndex === -1) {
-      return `Potion ${potionName} is not in inventory!`;
+    // if (potionIndex === -1) {
+    //   return `Potion ${potionName} is not in inventory!`;
+    // }
+
+    // this.potions.splice(potionIndex, 1);
+    for (let i = 0; i < this.potions.length; i += 1){
+      // console.log(this.potions.length)
+      if (this.potions[i].name === potionName) {
+        this.potions.splice(i, 1);
+        return atTheOldToad.removePotion(potionName);
+      }
     }
-
-    this.potions.splice(potionIndex, 1);
+    return `Potion ${potionName} is not in inventory!`;
   },
   updatePotionName(oldName, newName) {
     const potionIndex = this.potions.indexOf(oldName);
