@@ -2001,13 +2001,19 @@ const atTheOldToad = {
     return `Potion ${potionName} is not in inventory!`;
   },
   updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
+    // const potionIndex = this.potions.indexOf(oldName);
 
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
+    // if (potionIndex === -1) {
+    //   return `Potion ${oldName} is not in inventory!`;
+    // }
 
-    this.potions.splice(potionIndex, 1, newName);
+    // this.potions.splice(potionIndex, 1, newName);
+    this.potions.forEach((element, index) => {
+      if (element.name === oldName) {
+        element.name = newName
+        return;
+      }
+    })
   },
   // Change code above this line
 };
@@ -3655,7 +3661,7 @@ console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"
 // const sortedByAuthorName = [...books].sort((firstBook, lastBook) =>
 //   firstBook.author.localeCompare(lastBook.author));
 // console.log(sortedByAuthorName);
-// const sortedByReversedAuthorName = [...books].sort((firstBook, lastBook) => 
+// const sortedByReversedAuthorName = [...books].sort((firstBook, lastBook) =>
 // lastBook.author.localeCompare(firstBook.author));
 // console.log(sortedByReversedAuthorName);
 // const sortedByAscendingRating = [...books].sort((firstBook, lastBook) =>
@@ -4159,6 +4165,26 @@ console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"
 // console.log(getTotalBalanceByGender(users, "male"));
 // console.log(getTotalBalanceByGender(users, "female"));
 // Change code above this line
+
+
+// 1.5
+const pizzaPalace = {
+  pizzas: ["Supercheese", "Smoked", "Four meats"],
+  // Change code below this line
+  checkPizza(pizzaName) {
+    return pizzas.includes(pizzaName);
+  },
+  order(pizzaName) {
+    const isPizzaAvailable = checkPizza(pizzaName);
+
+    if (!isPizzaAvailable) {
+      return `Sorry, there is no pizza named «${pizzaName}»`;
+    }
+
+    return `Order accepted, preparing «${pizzaName}» pizza`;
+  },
+  // Change code above this line
+};
 
 
 
