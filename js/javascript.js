@@ -4310,7 +4310,65 @@ console.log(parent.hasOwnProperty("heritage"));
 console.log(child.hasOwnProperty("heritage"));
 
 
+// 6.5
+// class Car {
 
+// }
+// const toyota = new Car();
+// console.log(toyota);
+
+
+// 7.5
+// class Car {
+//   // Change code below this line
+//   constructor(brand, model, price) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+// }
+//    // Change code above this line
+// }
+
+// console.log(new Car("Audi", "Q3", 36000));
+// console.log(new Car("BMW", "X5", 58900));
+// console.log(new Car("Nissan","Murano", 31700));
+
+
+// 8.5
+// class Car {
+//   // Change code below this line
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+// }
+//    // Change code above this line
+// }
+
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
+// console.log(new Car({ brand: "BMW", model: "X5", price: 58900 }));
+// console.log(new Car({ brand: "Nissan", model: "Murano", price: 31700 }));
+
+
+// 9.5
+class Car {
+  constructor({ brand, model, price }) {
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+  }
+  // Change code below this line
+  getPrice() {
+    return this.price;
+}
+  changePrice(newPrice) {
+    return this.price === newPrice;
+}
+  // Change code above this line
+}
+console.log(new Car({ brand: 'Audi', model: 'Q3', price: 36000 }))
+console.log(getPrice())
+console.log(changePrice(35000))
 
 // const students = [
 //   { name: "Mango", score: 83 },
