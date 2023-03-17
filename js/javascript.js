@@ -4359,16 +4359,19 @@ class Car {
   }
   // Change code below this line
   getPrice() {
+    // console.log(this.price)
     return this.price;
 }
   changePrice(newPrice) {
-    return this.price === newPrice;
-}
+    this.price === newPrice;
+    // console.log(newPrice)
+    return newPrice;
+  }
   // Change code above this line
 }
 console.log(new Car({ brand: 'Audi', model: 'Q3', price: 36000 }))
-console.log(getPrice())
-console.log(changePrice(35000))
+console.log(Car.prototype.getPrice());
+console.log(Car.prototype.changePrice(35000));
 
 // const students = [
 //   { name: "Mango", score: 83 },
