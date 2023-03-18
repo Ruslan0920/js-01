@@ -4356,16 +4356,14 @@ class Car {
     this.brand = brand;
     this.model = model;
     this.price = price;
-    // console.log(price)
   }
   // Change code below this line
   getPrice() {
-    // console.log(this.price)
     return this.price;
   }
   
   changePrice(newPrice) {
-    this.price === newPrice;
+    this.price = newPrice; // !!! не три ===, а =
     console.log(newPrice)
     // return newPrice;
   }
