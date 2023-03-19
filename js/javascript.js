@@ -4363,7 +4363,7 @@ class Car {
   }
   
   changePrice(newPrice) {
-    this.price = newPrice; // !!! не три ===, а =
+    this.price = newPrice; // !!! не три ===, а одне = !!! )))
     console.log(newPrice)
     // return newPrice;
   }
