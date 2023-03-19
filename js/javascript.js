@@ -4387,18 +4387,19 @@ class Storage {
     return this.items;
   }
   addItem(newItem) {
-   return newItem.push(this.items);
+    this.items.push(newItem);
   }
-//   removeItem(itemToRemove) {
-// return this.items.slice(itemToRemove, 1)
-//   }
+  removeItem(itemToRemove) {
+   const removed =  this.items.indexOf(itemToRemove)
+ this.items.splice(removed, 1)
+  }
 }
 // Change code above this line
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-// storage.addItem("Droid");
+storage.addItem("Droid");
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-// storage.removeItem("Prolonger");
+storage.removeItem("Prolonger");
 console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
 
