@@ -4351,78 +4351,169 @@ console.log(child.hasOwnProperty("heritage"));
 
 
 // 9.5
-class Car {
-  constructor({ brand, model, price }) {
-    this.brand = brand;
-    this.model = model;
-    this.price = price;
-  }
-  // Change code below this line
-  getPrice() {
-    return this.price;
-  }
+// class Car {
+//   constructor({ brand, model, price }) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   // Change code below this line
+//   getPrice() {
+//     return this.price;
+//   }
   
-  changePrice(newPrice) {
-    this.price = newPrice; // !!! не три ===, а одне = !!! )))
-    console.log(newPrice)
-    // return newPrice;
-  }
+//   changePrice(newPrice) {
+//     this.price = newPrice; // !!! не три ===, а одне = !!! )))
+//     console.log(newPrice)
+//     // return newPrice;
+//   }
   
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
-console.log(new Car({ brand: 'Audi', model: 'Q3', price: 36000 }))
-console.log(Car.prototype.getPrice());
-console.log(Car.prototype.changePrice(35000));
-console.log(Car.prototype.hasOwnProperty('getPrice'));
-console.log(Car.prototype.hasOwnProperty('changePrice'))
+// console.log(new Car({ brand: 'Audi', model: 'Q3', price: 36000 }))
+// console.log(Car.prototype.getPrice());
+// console.log(Car.prototype.changePrice(35000));
+// console.log(Car.prototype.hasOwnProperty('getPrice'));
+// console.log(Car.prototype.hasOwnProperty('changePrice'))
 
 
 // 10.5
+// class Storage {
+//   constructor(items) {
+//     this.items = items;
+//   }
+//   getItems() {
+//     return this.items;
+//   }
+//   addItem(newItem) {
+//     this.items.push(newItem);
+//   }
+//   removeItem(itemToRemove) {
+//    const removed =  this.items.indexOf(itemToRemove)
+//  this.items.splice(removed, 1)
+//   }
+// }
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+
+
+// 11.5
+// class StringBuilder {
+//   constructor(value) {
+//     this.value = value;
+//   }
+
+//   getValue() {
+//     return this.value;
+//   }
+//   padEnd(str) {
+//     this.value += str;
+//   }
+//   padStart(str) {
+//     this.value = str + this.value;
+//   }
+//   padBoth(str) {
+//     this.value = str + this.value + str;
+//   }
+// }
+
+
+// Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
+
+// 12.5
+// class Car {
+//   // Change code below this line
+//   #brand
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+//   getBrand() {
+//     return this.#brand;
+//   }
+//   changeBrand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+//   // Change code above this line
+// }
+// console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
+// console.log(new Car({ brand: "bmw", model: "X5", price: 58900 }));
+// console.log(new Car({ brand: "Nissan", model: "Murano", price: 31700 }));
+// // console.log(Car.prototype.getBrand());
+// // console.log(changeBrand("Honda"))
+
+
+// 13.5
 class Storage {
+  // Change code below this line
+#items
   constructor(items) {
-    this.items = items;
+    this.#items = items;
   }
+
   getItems() {
-    return this.items;
+    return this.#items;
   }
+
   addItem(newItem) {
-    this.items.push(newItem);
+    this.#items.push(newItem);
   }
+
   removeItem(itemToRemove) {
-   const removed =  this.items.indexOf(itemToRemove)
- this.items.splice(removed, 1)
+    this.#items = this.#items.filter(item => item !== itemToRemove);
   }
 }
+
 // Change code above this line
 const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
 storage.addItem("Droid");
 console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
 storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
 
 
-// 11.5
+// 14.5
 class StringBuilder {
-  constructor(value) {
-    this.value = value;
+  // Change code below this line
+  #value;
+  constructor(initialValue) {
+    this.#value = initialValue;
   }
 
   getValue() {
-    return this.value;
+    return this.#value;
   }
+
   padEnd(str) {
-    this.value += str;
+    this.#value += str;
   }
+
   padStart(str) {
-    this.value = str + this.value;
+    this.#value = str + this.#value;
   }
+
   padBoth(str) {
-    this.value = str + this.value + str;
+    this.padStart(str);
+    this.padEnd(str);
   }
 }
-
 
 // Change code above this line
 const builder = new StringBuilder(".");
@@ -4434,6 +4525,76 @@ console.log(builder.getValue()); // "^.^"
 builder.padBoth("=");
 console.log(builder.getValue()); // "=^.^="
 
+
+// 15.5
+// class Car {
+//   // Change code below this line
+//   #brand;
+//   #model;
+//   #price;
+//   constructor({ brand, model, price }) {
+//     this.#brand = brand;
+//     this.model = model;
+//     this.price = price;
+//   }
+
+//   get brand() {
+//     return this.#brand;
+//   }
+
+//   set brand(newBrand) {
+//     this.#brand = newBrand;
+//   }
+
+//   get model() {
+//     return this.#model;
+//   }
+
+//   set model(newModel) {
+//     this.#model = newModel;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     this.#price = newPrice;
+//   }
+//   // Change code above this line
+// }
+
+
+// 16.5
+class Car {
+  // Change code below this line
+  static MAX_PRICE = 50000;
+
+  #price;
+
+  constructor({ price }) {
+    this.#price = price;
+  }
+
+  get price() {
+    return this.#price;
+  }
+
+  set price(newPrice) {
+    if(this.#price > MAX_PRICE)
+    this.#price = newPrice;
+  }
+  // Change code above this line
+}
+
+const audi = new Car({ price: 35000 });
+console.log(audi.price); // 35000
+
+audi.price = 49000;
+console.log(audi.price); // 49000
+
+audi.price = 51000;
+console.log(audi.price); // 49000
 
 
 
